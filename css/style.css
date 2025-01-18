@@ -295,6 +295,10 @@ nav .logo img {
     cursor: pointer;
 }
 
+.mobile-nav-close i {
+    color: var(--primary-purple);
+}
+
 .overlay {
     position: fixed;
     top: 0;
