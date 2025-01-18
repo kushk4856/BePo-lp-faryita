@@ -231,8 +231,9 @@
     }
 
     .section-title {
-        font-size: 28px;
+        font-size: 35px;
         margin-bottom: 0px;
+        line-height: 45px;
     }
 
     .accordion-content p {

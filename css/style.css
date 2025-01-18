@@ -954,6 +954,8 @@ nav .logo img {
     /* background: #3D968C; */
     background: var(--btn-purple);
     transition: all .3s ease-in-out;
+    font-size: 18px;
+    font-family: 'Poppins';
 }
 
 .btn:hover {
