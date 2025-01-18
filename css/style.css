@@ -437,7 +437,7 @@ nav .logo img {
 .products-section {
     padding: 3rem 5%;
     background: #fff;
-    margin-inline: 16px;
+    /* margin-inline: 16px; */
 }
 
 .featured-juice {
