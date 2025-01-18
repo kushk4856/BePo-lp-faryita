@@ -482,7 +482,8 @@ nav .logo img {
 
 .juice-item {
     /* background: #fff; */
-    background-color: #f8e1e1;
+    /* background-color: #f8e1e1; */
+    background-color: var(--btn-purple);
     height: 220px;
     border-radius: 30px;
     overflow: hidden;
