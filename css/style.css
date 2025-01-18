@@ -230,6 +230,17 @@ nav .logo img {
 
 }
 
+.get-in-touch_mbl {
+    background-color: var(--btn-purple);
+    padding: 15px 35px !important;
+    border-radius: 15px;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 700 !important;
+    text-align: center;
+
+}
+
 /* Mobile Navigation */
 .hamburger {
     display: none;
@@ -530,7 +541,7 @@ nav .logo img {
 }
 
 .juice-container:hover .juice-info h3 {
-    color: #AF5364;
+    color: var(--primary-purple);
 
 }
 

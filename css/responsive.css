@@ -365,7 +365,7 @@
 
 @media (min-width: 576px) and (max-width: 768px) {
     .juice-card {
-        background-color: #87A143;
+        background-color: rgb(127, 96, 205);
         background-image: none;
     }
 
@@ -490,6 +490,7 @@
     .trending-section,
     .products-section {
         padding: 3rem 0px;
+        margin-inline: 16px;
     }
 
     .pink-banner-content {
