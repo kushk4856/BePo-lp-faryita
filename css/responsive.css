@@ -137,9 +137,10 @@
 }
 
 @media (max-width: 768px) {
-    .juice-blog-dot.active{
+    .juice-blog-dot.active {
         display: block;
     }
+
     .hero-content {
         max-width: 100%;
     }
@@ -314,6 +315,22 @@
 
     .hamburger {
         margin-left: 24px;
+    }
+
+    .br_mbl_hidden {
+        display: none;
+    }
+
+    .slider-container {
+        display: block;
+    }
+
+    .juice-grid {
+        display: none;
+    }
+
+    .juice-item {
+        box-shadow: none;
     }
 
 
@@ -549,14 +566,16 @@
     .dropdown-section .section-header h3 {
         margin-bottom: 4px;
     }
+
     .shop-juice-btn {
         margin-bottom: 0px;
     }
+
     .info-details h2 {
         font-size: 35px;
     }
 
-    .hero-content .person_div{
+    .hero-content .person_div {
         display: inline;
     }
 }

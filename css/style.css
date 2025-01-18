@@ -2344,3 +2344,44 @@ textarea.juice-form-control {
     }
 
 }
+
+
+/* =====extra slider === */
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    display: none;
+}
+
+.slider {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s linear;
+}
+
+.card {
+    flex: 0 0 33.33%;
+    /* Show 3 cards at a time */
+    max-width: 33.33%;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* margin: 0 10px; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    padding: 10px 0;
+}

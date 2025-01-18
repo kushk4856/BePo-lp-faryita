@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Continuous Card Slider</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      .slider-container {
+        overflow: hidden;
+        width: 80%;
+        max-width: 900px;
+        position: relative;
+      }
+      .slider {
+        display: flex;
+        transition: transform 0.5s linear;
+      }
+      .card {
+        flex: 0 0 33.33%; /* Show 3 cards at a time */
+        max-width: 33.33%;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 0 10px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .card h2 {
+        font-size: 1.25rem;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt="Nature"
+          />
+          <h2>Nature</h2>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt="Cityscape"
+          />
+          <h2>Cityscape</h2>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt="Mountains"
+          />
+          <h2>Mountains</h2>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt="Forest"
+          />
+          <h2>Forest</h2>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt="Autumn Leaves"
+          />
+          <h2>Autumn Leaves</h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const slider = document.getElementById("slider");
+      let cardWidth2 = slider.children[0].offsetWidth + 20; // Width of each card including margin
+      let intervalSpeed = 2000; // Interval speed in ms
+      let interval;
+
+      function startSlider2() {
+        interval = setInterval(() => {
+          slider.style.transition = "transform 0.5s linear";
+          slider.style.transform = `translateX(-${cardWidth2}px)`;
+
+          // After the transition ends, rearrange the cards
+          setTimeout(() => {
+            slider.style.transition = "none";
+            slider.style.transform = "translateX(0)";
+            slider.appendChild(slider.children[0]); // Move the first card to the end
+          }, 500); // Match transition duration
+        }, intervalSpeed);
+      }
+
+      startSlider2();
+    </script>
+  </body>
+</html>

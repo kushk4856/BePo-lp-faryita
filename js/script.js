@@ -305,8 +305,6 @@ document.addEventListener("click", (event) => {
   }
 });
 
-
-
 /* 
 ==========================================================
 ? => Modal Functionality 
@@ -356,3 +354,25 @@ function closeModal(modalId) {
     document.body.style.overflow = "unset";
   }, 300);
 }
+
+// ======mbl card slider===
+const slider = document.getElementById("slider");
+let cardWidth2 = slider.children[0].offsetWidth + 20; // Width of each card including margin
+let intervalSpeed = 2500; // Interval speed in ms
+let interval;
+
+function startSlider2() {
+  interval = setInterval(() => {
+    slider.style.transition = "transform 0.5s linear";
+    slider.style.transform = `translateX(-${cardWidth2}px)`;
+
+    // After the transition ends, rearrange the cards
+    setTimeout(() => {
+      slider.style.transition = "none";
+      slider.style.transform = "translateX(0)";
+      slider.appendChild(slider.children[0]); // Move the first card to the end
+    }, 500); // Match transition duration
+  }, intervalSpeed);
+}
+
+startSlider2();
