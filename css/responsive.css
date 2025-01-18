@@ -1,0 +1,607 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .juice-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile and tablet styles */
+@media (max-width: 1026px) {
+    .hero-content {
+        max-width: 92%;
+    }
+
+    .category_inner .category_cards {
+        height: auto;
+    }
+
+    .info-details {
+        width: 100%;
+    }
+
+    .accordion-button {
+        line-height: 24px;
+    }
+
+    .juice-blog-track {
+        flex-direction: column;
+    }
+
+    .juice-blog-card {
+        height: 420px;
+    }
+
+    .juice-contact-content {
+        width: 100%;
+        padding-inline: 70px;
+    }
+
+
+    .fruits_icon_1,
+    .fruits_icon_2,
+    .fruits_icon_3,
+    .fruits_icon_4 {
+        display: none;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 992px) {
+    .pink-banner-content {
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .pink-banner::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .footer-main {
+        padding-inline: 24px;
+    }
+
+    .juice-blog-track {
+        flex-direction: row;
+    }
+
+    .juice-blog-image {
+        height: 400px;
+    }
+
+    .juice-blog-card {
+        height: auto;
+    }
+
+    .featured-juice {
+        grid-template-columns: 1fr;
+    }
+
+    .juice-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .juice-card {
+        padding: 3rem;
+    }
+
+
+    .dropdown-section .section-header {
+        display: flex;
+        /* Show dropdown headers on mobile/tablet */
+    }
+
+    .dropdown-content {
+        display: none;
+        /* Hide content by default on mobile/tablet */
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .dropdown-content.active {
+        display: block;
+        /* Show when active */
+    }
+
+    /* Animation for dropdown */
+    .dropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .dropdown-content.active {
+        max-height: 500px;
+        /* Adjust based on your content */
+    }
+
+    .dropdown-arrow {
+        display: inline-block;
+        /* Show arrow on mobile/tablet */
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .juice-blog-dot.active{
+        display: block;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .juice-blog-dots {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .left_hero_content {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .nav-icons {
+        gap: 0.5rem;
+    }
+
+    .get-in-touch {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .juice-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .top-header {
+        display: none;
+    }
+
+    .marquee-item span {
+        font-size: 14px;
+    }
+
+    .marquee-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .category_inner {
+        flex-direction: column;
+    }
+
+    .category_inner .category_cards {
+        width: 100%;
+        height: auto;
+    }
+
+    .trending-grid {
+        gap: 50px;
+    }
+
+    .accordion-button {
+        line-height: normal;
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
+
+    .accordion-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .features {
+        gap: 40px;
+    }
+
+    .feature-item {
+        border-right: none;
+    }
+
+    .chefs-grid {
+        flex-direction: column;
+    }
+
+    .chefs_heading p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .chefs_heading {
+        flex-direction: column;
+    }
+
+    .chefs-section {
+        padding: 45px 15px;
+    }
+
+    .chefs-title {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .juice-contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .juice-blog-section {
+        padding-inline: 0px;
+    }
+
+    .juice-blog-content {
+        padding: 8px;
+    }
+
+    .juice-contact-content {
+        padding-right: 0px;
+        padding-block: 40px;
+        padding-inline: 0px;
+    }
+
+    .juice-contact-title {
+        text-align: center;
+    }
+
+    .juice-contact-subtitle {
+        text-align: center;
+    }
+
+    .main-container {
+        padding-inline: 0px;
+    }
+
+    .banner-text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .content-wrapper .sub_heading {
+        max-width: 100%;
+    }
+
+    .content-wrapper {
+        padding-inline: 24px;
+        padding-top: 40px;
+    }
+
+
+    .payment-methods {
+        padding-inline: 24px;
+        gap: 8px;
+    }
+
+    .footer-main {
+        padding-inline: 16px;
+    }
+
+    .juice-blog-image {
+        height: 200px;
+    }
+
+    .hamburger {
+        margin-left: 24px;
+    }
+
+
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .juice-card {
+        background-color: #87A143;
+        background-image: none;
+    }
+
+    .juice-item {
+        height: 250px;
+    }
+
+    .pink-banner-content {
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+
+    .category_inner {
+        flex-direction: row;
+    }
+
+    .features {
+        gap: 0px;
+    }
+
+    .faq-section {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chef-card::before {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .chef-image {
+        height: 300px;
+    }
+
+    .chef-image img {
+        object-fit: contain;
+    }
+
+    .chefs-grid {
+        padding-inline: 40px;
+    }
+
+    .juice-blog-read-more {
+        align-self: center;
+    }
+
+    .juice-blog-content {
+        align-items: center;
+    }
+
+    .juice-blog-excerpt {
+        text-align: center;
+    }
+
+    .product_mbl_title {
+        display: block;
+        color: #fff;
+        font-family: Anton;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 55px;
+        text-transform: capitalize;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .juice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content .orange_fruite {
+        right: 124px;
+    }
+
+    .hero-content .orange_fruite img {
+        width: 120px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .left_hero_content {
+        padding-block: 32px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-inline: 0px;
+        align-items: center;
+    }
+
+    .juice-card {
+        min-height: 540px;
+    }
+
+    .juice-item {
+        height: 380px;
+    }
+
+    /* .slider_logo {
+        gap: 0px;
+    } */
+
+    .slide-card_logo {
+        flex: 0 0 100%;
+        max-width: 100%;
+        gap: 50px;
+    }
+
+    .slide-card_logo img {
+        width: 120px;
+    }
+
+    .slider-container_logo::after {
+        height: 60px;
+    }
+
+    .slide-card_logo p {
+        font-size: 24px;
+    }
+
+    .icons_extra {
+        display: none;
+    }
+
+    /* .hero-content .person_div {
+        width: 60%;
+        height: 230px;
+    } */
+
+    .hero-content {
+        justify-content: flex-end;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .juice-card h2 {
+        font-size: 2rem;
+    }
+
+    .info-details h2 {
+        font-size: 40px;
+        line-height: normal;
+        padding-top: 28px;
+        padding-bottom: 0px;
+    }
+
+    .info-section {
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 3;
+    }
+
+    /* .info-section::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #83C5BE;
+        opacity: .7;
+        z-index: -1;
+        border-radius: 30px;
+    } */
+
+    .pink-banner-content {
+        max-width: 100%;
+    }
+
+    .pink-banner h2 {
+        line-height: 45px;
+
+    }
+
+    .pink-banner p {
+        padding-right: 0px;
+    }
+
+    .trending-header h2 {
+        font-size: 37px;
+    }
+
+    .hero-content {
+        flex-wrap: wrap;
+    }
+
+    .faq-section {
+        flex-direction: column-reverse;
+        padding-inline: 0px;
+    }
+
+    .products-section {
+        padding-bottom: 2rem;
+    }
+
+    .marquee_section {
+        padding-bottom: 2rem;
+    }
+
+    .footer-section.company-info .logo img {
+        width: 135px;
+    }
+
+    .dropdown-section .section-header {
+        padding: 0 0;
+    }
+
+    .dropdown-section .section-header h3 {
+        margin-bottom: 4px;
+    }
+    .shop-juice-btn {
+        margin-bottom: 0px;
+    }
+    .info-details h2 {
+        font-size: 35px;
+    }
+
+    .hero-content .person_div{
+        display: inline;
+    }
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 600px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        /* First row: 2 columns */
+        grid-template-rows: auto auto;
+        /* Two rows */
+        gap: 30px;
+    }
+
+
+
+    /* First row items */
+    .footer-section.company-info {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer-section:nth-child(2) {
+        /* Get in Touch section */
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    /* Second row items */
+    .footer-section:nth-child(3),
+    /* Shop */
+    .footer-section:nth-child(4),
+    /* Useful Links */
+    .footer-section:nth-child(5) {
+        /* Services */
+        grid-column: auto;
+        /* Let these items flow naturally */
+        grid-row: 2;
+        /* Place them in the second row */
+    }
+
+    /* Create a new grid for the second row */
+    .footer-content> :nth-child(n+3) {
+        grid-column: span 1;
+    }
+}
