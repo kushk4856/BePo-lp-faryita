@@ -23,9 +23,9 @@
         line-height: 24px;
     }
 
-    .juice-blog-track {
+    /* .juice-blog-track {
         flex-direction: column;
-    }
+    } */
 
     .juice-blog-card {
         height: 420px;
@@ -44,9 +44,22 @@
         display: none;
     }
 
+    .pink-banner h2 {
+        font-size: 45px;
+    }
 
 
+    .pink-banner-content {
+        width: 78%;
+    }
 
+    .slider-container {
+        display: block;
+    }
+
+    .juice-grid {
+        display: none;
+    }
 
 }
 
@@ -55,6 +68,10 @@
         max-width: 100%;
         position: relative;
         z-index: 2;
+    }
+
+    .juice-blog-track {
+        flex-direction: column;
     }
 
     .pink-banner::before {
@@ -154,7 +171,7 @@
     }
 
     .left_hero_content {
-        width: 100%;
+        width: 70%;
     }
 
     .hamburger {
@@ -321,16 +338,23 @@
         display: none;
     }
 
-    .slider-container {
-        display: block;
+
+    .pink-banner h2 {
+        line-height: 60px;
     }
 
-    .juice-grid {
-        display: none;
-    }
 
     .juice-item {
         box-shadow: none;
+    }
+
+    .mobile-nav {
+        width: 70%;
+        right: -70%;
+    }
+
+    .pink-banner-content {
+        width: 100%;
     }
 
 
@@ -410,9 +434,72 @@
         text-transform: capitalize;
     }
 
+    .hero h1 {
+        line-height: 45px;
+        font-size: 2.3rem;
+    }
+
+    .left_hero_content {
+        padding-block: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .juice-card {
+        padding: 2rem;
+    }
+
+    .product_mbl_title {
+        line-height: 65px;
+    }
+
+    .slide-card_logo {
+        flex: 0 0 50%;
+        max-width: 50%;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .pink-banner {
+        background-position: right;
+    }
+
+    .pink-banner::before {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .pink-banner p {
+        font-weight: 600;
+        padding-right: 0px;
+    }
+
+    .features {
+        gap: 65px;
+    }
 }
 
 @media (max-width: 576px) {
+
+    .trending-section,
+    .products-section {
+        padding: 3rem 0px;
+    }
+
+    .pink-banner-content {
+        width: 100%;
+    }
+
+    .left_hero_content {
+        width: 100%;
+    }
+
     .juice-grid {
         grid-template-columns: 1fr;
     }
@@ -527,6 +614,7 @@
 
     .pink-banner h2 {
         line-height: 45px;
+        line-height: 55px;
 
     }
 
@@ -578,6 +666,8 @@
     .hero-content .person_div {
         display: inline;
     }
+
+
 }
 
 
@@ -623,4 +713,91 @@
     .footer-content> :nth-child(n+3) {
         grid-column: span 1;
     }
+}
+
+@media (max-width: 1026px) and (min-width: 992px) {
+
+    .ex1,
+    .ex2 {
+        display: none;
+    }
+
+    .section-title {
+        line-height: 64px;
+    }
+
+    .left_hero_content {
+        padding-block: 36px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .pink-banner h2 {
+        line-height: 60px;
+    }
+
+    .left_hero_content {
+        width: 64%;
+    }
+
+    .hero h1,
+    .trending-header h2,
+    .info-details h2 {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-weight: 500;
+    }
+
+    .juice-blog-content {
+        padding: 8px;
+    }
+
+    .juice-blog-read-more {
+        padding: 19px 40px;
+    }
+
+    .featured-juice {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider-container {
+        max-width: 1028px;
+        /* padding-inline: 10px; */
+        border-radius: 30px;
+    }
+
+    .juice-item {
+        height: 360px;
+    }
+
+    .juice-card {
+        background-image: none;
+        background-color: #53218B;
+
+    }
+
+    .product_mbl_title {
+        display: block;
+        color: #fff;
+        font-family: Anton;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 55px;
+        text-transform: capitalize;
+    }
+
+    .pink-banner p {
+        padding-right: 50px;
+    }
+
+    .section-title {
+        font-size: 45px;
+    }
+
 }

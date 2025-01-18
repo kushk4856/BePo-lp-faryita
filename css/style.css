@@ -356,7 +356,7 @@ nav .logo img {
 }
 
 .left_hero_content {
-    padding-inline: 24px;
+    padding-right: 24px;
     padding-block: 120px;
     width: 50%;
 }
@@ -437,6 +437,7 @@ nav .logo img {
 .products-section {
     padding: 3rem 5%;
     background: #fff;
+    margin-inline: 16px;
 }
 
 .featured-juice {
@@ -456,7 +457,7 @@ nav .logo img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../images/bepo/who-is-this-for-bg.webp);
+    background-image: url(../images/download\ 3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -691,6 +692,7 @@ nav .logo img {
     padding: 4rem 5%;
     /* background: #F0F6FF; */
     text-align: center;
+    margin-inline: 16px;
 }
 
 .trending-header {
@@ -955,7 +957,7 @@ nav .logo img {
     margin-bottom: 40px;
     align-items: flex-start;
     margin-inline: 16px;
-    padding-inline: 44px;
+    padding-inline: 5%;
 }
 
 .faq-content {
@@ -1212,7 +1214,7 @@ nav .logo img {
 .juice-blog-section {
     margin-block: 50px;
     margin-inline: 16px;
-    padding-inline: 44px;
+    padding-inline: 5%;
 }
 
 .juice-blog-title {
