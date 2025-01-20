@@ -154,7 +154,7 @@ nav .logo img {
 
 .nav-icons {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -970,7 +970,7 @@ nav .logo img {
     margin-bottom: 40px;
     align-items: flex-start;
     margin-inline: 16px;
-    padding-inline: 5%;
+    /* padding-inline: 5%; */
 }
 
 .faq-content {
@@ -1070,6 +1070,114 @@ nav .logo img {
     /* text-transform: capitalize; */
     margin-bottom: 20px;
     /* line-height: 1.6; */
+}
+
+
+
+/* =======amazon section===  */
+
+.amazon {
+    /* margin-inline: 16px; */
+    padding-bottom: 3rem;
+    margin-bottom: 50px;
+    /* background-color: var(p); */
+}
+
+.amazon_inner {
+    display: flex;
+    justify-content: space-between;
+    min-height: 600px;
+}
+ .amazon .right_amazon{
+    width: 43%;
+   
+}
+
+.amazon .left_amazon {
+    /* background-color:  #f99e9e; */
+    /* background-color: var(--primary-purple); */
+    background-color: #372567;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 40%;
+    position: relative;
+    z-index: 5;
+
+}
+
+.amazon .left_amazon .features_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding-left: 30px;
+    height: 100%;
+
+}
+
+.amazon_inner .left_amazon .features_div .feature_div{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.amazon_inner .left_amazon .features_div .feature_div p {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.amazon .left_amazon .features_div img {
+    width: 150px;
+    height: 150px;
+}
+
+.amazon .left_amazon .product_div {
+    position: absolute;
+    right: -180px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -1;
+}
+.amazon .left_amazon img {
+    width: 400px;
+    height: auto;
+}
+
+.right_amazon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_amazon .amazon_content h3 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 75px;
+    font-family: Anton;
+    letter-spacing: 8px;
+    color: var(--primary-purple);
+}
+
+.right_amazon .amazon_content .sub_heading {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--primary-purple);
+}
+
+.right_amazon .amazon_content .para {
+    margin-top: 10px;
+   width: 59%;
+   font-size: 21px;
+   font-weight: 500;
+   /* color: var(--btn-purple); */
+   color: #5f5e5eb5;
 }
 
 /* Chefs Section */
@@ -1178,17 +1286,17 @@ nav .logo img {
 }
 
 
-.chef-image {
-    /* width: 120px;
+/* .chef-image {
+    width: 120px;
     height: 120px;
-    border-radius: 50%; */
+    border-radius: 50%;
     margin: 0 auto 15px;
     overflow: hidden;
     mask-image: url('../images/icons/team-bg.svg');
     -webkit-mask-size: contain;
     -webkit-mask-position: center center;
     -webkit-mask-repeat: no-repeat;
-}
+} */
 
 .chef-image img {
     width: 100%;
@@ -1356,7 +1464,7 @@ nav .logo img {
     background: var(--primary-purple);
     color: #fff;
     padding: 19px 47px;
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -2399,4 +2507,48 @@ textarea.juice-form-control {
 .card h2 {
     font-size: 1.25rem;
     padding: 10px 0;
+}
+
+
+/* ==== amazon button ===  */
+.amazon-button {
+    display: flex
+;
+    align-items: center;
+    /* background-color: rgb(127, 96, 205); */
+    background-color: #ffa41c;
+    /* color: #fff; */
+    color: #000;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.2s;
+    font-family: inherit;
+    /* margin-top: 24px; */
+    font-weight: 500;
+    /* min-width: 209px; */
+    font-size: 16px !important;
+    justify-content: center;
+    padding-block: 12px;
+    /* gap: 10px; */
+
+
+}
+
+.amazon-button.effect {
+    transition: all .3s ease-in-out;
+
+}
+
+.amazon-button.effect:hover{
+    transform: translateY(-3px);
+}
+
+.amazon-icon {
+    height: 20px;
+    margin-right: 8px;
 }
