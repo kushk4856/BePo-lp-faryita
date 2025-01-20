@@ -500,7 +500,7 @@ nav .logo img {
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    /* cursor: pointer; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -528,7 +528,7 @@ nav .logo img {
 
 .juice-info h3 {
     color: #000;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-align: center;
     font-family: Poppins;
     font-size: 17px;
@@ -753,7 +753,7 @@ nav .logo img {
     justify-content: center;
     flex-direction: column;
     gap: 24px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .trending-item:hover .trending-img-container img {
