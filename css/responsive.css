@@ -158,6 +158,10 @@
         display: block;
     }
 
+    .nav-icons a{
+        display: none;
+    }
+
     .hero-content {
         max-width: 100%;
     }
