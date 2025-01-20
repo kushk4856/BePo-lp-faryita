@@ -154,6 +154,13 @@
 }
 
 @media (max-width: 768px) {
+
+    .pink-banner-content {
+        display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    }
     .juice-blog-dot.active {
         display: block;
     }
